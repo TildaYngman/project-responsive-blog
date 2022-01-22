@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* p {
+  color: black;
+  font-size: 14px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../assets/clock.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  max-width: 100vw;
+  min-width: 100vw;
+  border-radius: 0 0 4rem 4rem;
+  -webkit-box-shadow: 0 0 1rem #303253;
+          box-shadow: 0 0 1rem #303253;
+  font-family: 'Montserrat', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 50vh;
+  max-width: 100vw;
+  min-width: 100vw;
+  padding: 1rem;
+  font-size: 4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+main section {
+  width: 100vw;
+  height: 50vh;
+  max-width: 100vw;
+  min-width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main h2 {
+  font-size: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+main a {
+  font-size: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+main #more-arrows {
+  width: 7.5rem;
+  height: 65px;
+}
+
+main #more-arrows:hover polygon {
+  fill: #FFF;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+main #more-arrows:hover polygon.arrow-bottom {
+  -webkit-transform: translateY(-18px);
+          transform: translateY(-18px);
+}
+
+main #more-arrows:hover polygon.arrow-top {
+  -webkit-transform: translateY(18px);
+          transform: translateY(18px);
+}
+
+main polygon {
+  fill: #FFF;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+main polygon.arrow-middle {
+  opacity: 0.75;
+}
+
+main polygon.arrow-top {
+  opacity: 0.5;
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main h1 {
+    font-size: 5rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    text-align: left;
+  }
+  main section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    height: 50vh;
+    width: 100;
+  }
+  main section h2 {
+    padding: 1rem;
+    font-size: 3rem;
+    direction: rtl;
+    text-align: right;
+  }
+  main section a {
+    padding: 2rem;
+    font-size: 6rem;
+    margin-left: 2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  main h1 {
+    font-size: 6rem;
+  }
+  main section h2 {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  main h1 {
+    font-size: 7rem;
+  }
+  main section h2 {
+    font-size: 5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
